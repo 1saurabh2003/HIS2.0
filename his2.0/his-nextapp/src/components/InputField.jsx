@@ -68,7 +68,10 @@ function MyForm() {
   }
   }
   return (
-    <div className='maincontainer'>
+    <div className='maincon'>
+    <div className='card'>
+    <div className='card-overlay'></div>
+    <div className='card-inner'>
     <form onSubmit={handleSubmit}>
       <input type="text" placeholder='City' onChange={(e)=>setCityName(e.target.value)}/> <br />
       <select name='Crop Name' onChange={(e)=>setCropname(e.target.value)}>
@@ -88,6 +91,9 @@ function MyForm() {
       <button className="button" type='Submit'> Submit </button>
     </form>
     </div>
+    </div>
+    </div>
+    
   );
 }
 
